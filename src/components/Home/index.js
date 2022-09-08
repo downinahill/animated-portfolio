@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from '../Logo'
+import Loader from 'react-loaders'
 
 const Home= () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['r', 'i', 'a', 'n', ',']
+    const nameArray = ['B', 'r', 'i', 'a', 'n', ',']
     const jobArray = ['a', '', 'w', 'e', 'b', '', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
     useEffect(() => {
@@ -41,10 +42,11 @@ const Home= () => {
                 idx={22}
             />
             </h1>
-            <h2>Full Stack Developer with a focus on Front End and React</h2>
+            <h2>Full stack developer, artist, musician, writer, forever a student of everything.</h2>
             <Link to="/contact" className="flat-button">CONTACT ME</Link>
         </div>
     <Logo className='large-logo'/>
+    <Loader type="pacman" />
     </div>
   )
 }
