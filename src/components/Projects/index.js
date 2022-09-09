@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './index.scss'
-// import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../AnimatedLetters'
 import { projects } from "../../data";
 import Loader from 'react-loaders'
 
@@ -17,11 +17,11 @@ const Projects = () => {
 
   return (
     <div className='container projects-page'>
-        {/* <div className='text-zone'>
+        <div className='text-zone'>
             <h1>
                 <AnimatedLetters 
                     letterClass={letterClass}
-                    strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
+                    strArray={[]}
                     idx={15}
                 />
             </h1>
@@ -29,7 +29,7 @@ const Projects = () => {
           
 
 
-        </div> */}
+        </div>
         <section id="projects" className="text-gray-400 bg-gray-900 body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
