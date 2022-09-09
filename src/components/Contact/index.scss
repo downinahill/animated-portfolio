@@ -70,5 +70,17 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .me{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    img{
+      padding: 50px;
+      margin: 50px;
+    }
   }
 }

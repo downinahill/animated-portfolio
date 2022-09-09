@@ -40,7 +40,9 @@ const Contact = () => {
 
   return (
     <div className='container contact-page'>
+        <div className="me">
         <div className='text-zone'>
+        
             <h1>
                 <AnimatedLetters 
                     letterClass={letterClass}
@@ -75,8 +77,8 @@ const Contact = () => {
 
         </div>
 
-        <div className="me">
-            <img src="profile picture_ccexpress.png" alt="This is me." style={{ display: "grid", float: "right", width: "300px", height: "300px", padding: "100px;", margin: "50px;" }}/>
+        
+            {/* <img src="profile picture_ccexpress.png" alt="This is me." style={{ display: "flex", float: "center", width: "300px", height: "300px", padding: "100px;"}}/> */}
         </div>
 
       <Loader type="pacman" />
