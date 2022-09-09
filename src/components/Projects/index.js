@@ -15,7 +15,7 @@ const Projects = () => {
     // }, [])
 
   return (
-    <div className='container about-page'>
+    <div className='container projects-page'>
         <div className='text-zone'>
             <h1>
                 <AnimatedLetters 
@@ -24,6 +24,7 @@ const Projects = () => {
                     idx={15}
                 />
             </h1>
+       
           
 
 
@@ -58,7 +59,9 @@ const Projects = () => {
                                     <h1 className="title">
                                         {project.title}
                                     </h1>
-                                    <p className="description">{project.description}</p>
+                                    <p className="description">
+                                        {project.description}
+                                    </p>
                                 </div>
                             </div>
                         </a>

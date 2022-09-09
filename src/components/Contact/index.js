@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
+// import Loader from 'react-loaders'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const refForm = useRef()
 
     useEffect(() => {
         // return setTimeout(() => {
@@ -12,22 +16,66 @@ const Contact = () => {
         }, [])
     // }, [])
 
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs
+        .sendForm(
+            'service_7blkuj8',
+            'template_6ae5dab',
+            refForm.current,
+            'jtZ1ue2TyAtPD87L1'
+            
+            
+        )
+        .then(() => {
+            alert('Message successfully sent!')
+            window.location.reload(false)
+        },
+        () => {
+            alert('Failed to send message! Please try again.')
+        }
+        )
+    }
+
   return (
-    <div className='container about-page'>
+    <div className='container contact-page'>
         <div className='text-zone'>
             <h1>
                 <AnimatedLetters 
                     letterClass={letterClass}
-                    strArray={['C', 'o', 'n', 't', 'a', 'c', 't']}
+                    strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
                     idx={15}
                 />
             </h1>
-           
+            <div className="contact-form">
+                <form ref={refForm} onSubmit={sendEmail}>
+                    <li className="half">
+                        <input type="text" name="name" placeholder ="Name" required />
+                    </li>
+                    <li className="half">
+                        <input type="email" name="email" placeholder ="Email" required />
+                    </li>
+                    <li>
+                        <input placeholder="Subject" type="text" name ="subject" required />
+                    </li>
+                    <li>
+                        <textarea placeholder="message" name ="message" required />
+                    </li>
+                    <li>
+                        <input type="submit" className ="flat-button" value="SEND" />
+                    </li>
+                </form>
+            </div>
 
 
         </div>
 
-      
+        <div>
+            <img src="profile picture_ccexpress.png" alt="This is me." />
+        </div>
+
+      {/* <Loader type="pacman" /> */}
 
     </div>
   )

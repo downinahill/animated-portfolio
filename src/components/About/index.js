@@ -3,7 +3,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPython, faCss3, faGitAlt, faHtml5, faJsSquare, faReact} from '@fortawesome/free-brands-svg-icons'
+import { faPython, faCss3, faGithub, faHtml5, faJs, faReact} from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -55,11 +55,12 @@ In my most recent web development experience I’ve been focusing more on the fr
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <FontAwesomeIcon icon={faJs} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
             </div>
+            
           </div>
         </div>
       </div>
