@@ -3,7 +3,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-// import Loader from 'react-loaders'
+import Loader from 'react-loaders'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -67,15 +67,19 @@ const Contact = () => {
                     </li>
                 </form>
             </div>
-
+<div>
+    <p style={{fontSize: "20px", color: "gold"}}>Email: brian.hill.0023@gmail.com <br />
+    <a href="https://docs.google.com/document/d/1599czzTAyjHVWjxz25fkWmmI763ZMn2wcD6-JPQ_lc4/edit" style={{color: "gold"}}>Resume</a>
+    </p>
+</div>
 
         </div>
 
-        <div>
-            <img src="profile picture_ccexpress.png" alt="This is me." />
+        <div className="me">
+            <img src="profile picture_ccexpress.png" alt="This is me." style={{ display: "grid", float: "right", width: "300px", height: "300px", padding: "100px;", margin: "50px;" }}/>
         </div>
 
-      {/* <Loader type="pacman" /> */}
+      <Loader type="pacman" />
 
     </div>
   )

@@ -1,12 +1,11 @@
 export const projects = [
-    {
-      title: "Sharing is Scary",
-      subtitle: "Full Stack Art Sharing App",
-      description:
-        "This app utilizes EJS and Multer to allow people to share their artwork with others.",
-      image: "Screen Shot 2022-02-06 at 4.24.15 PM.png",
-      link: "https://bestartshare.herokuapp.com/",
-    },
+  {
+    title: "Down in a Gym",
+    subtitle: "Fitness App",
+    description: "A fitness app built using React and fetching data from the ExercisesDB API.",
+    image: "Screen Shot 2022-06-25 at 3.23.32 PM.png",
+    link: "https://downinahill-fitness.netlify.app/",
+  },
     {
       title: "Accompli",
       subtitle: "MERN Stack Productivity App",
@@ -28,11 +27,12 @@ export const projects = [
       image: "Screen Shot 2022-05-17 at 6.43.39 AM.png",
       link: "https://friendly-basbousa-2c9315.netlify.app/",
     },
-    {
-      title: "Down in a Gym",
-      subtitle: "Fitness App",
-      description: "A fitness app built using React and fetching data from the ExercisesDB API.",
-      image: "Screen Shot 2022-06-25 at 3.23.32 PM.png",
-      link: "https://downinahill-fitness.netlify.app/",
-    },
+   {
+    title: "Sharing is Scary",
+    subtitle: "Full Stack Art Sharing App",
+    description:
+      "This app utilizes EJS and Multer to allow people to share their artwork with others.",
+    image: "Screen Shot 2022-02-06 at 4.24.15 PM.png",
+    link: "https://bestartshare.herokuapp.com/",
+  },
 ];
