@@ -46,7 +46,7 @@ const Projects = () => {
                         <a
                             href={project.link}
                             key={project.image}
-                            className="link">
+                            className="sm:w-1/2 w-100 p-4">
                             <div className="gallery">
                                 <img
                                     alt="gallery"
@@ -54,15 +54,13 @@ const Projects = () => {
                                     src={project.image}
                                 />
                                 <div className="subtitle">
-                                    <h2 className="caption">
+                                    <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                                         {project.subtitle}
                                     </h2>
                                     <h1 className="title">
                                         {project.title}
                                     </h1>
-                                    <p className="description">
-                                        {project.description}
-                                    </p>
+                                    <p className="description">{project.description}</p>
                                 </div>
                             </div>
                         </a>
