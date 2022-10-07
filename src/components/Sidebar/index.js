@@ -8,7 +8,7 @@ import { faHome, faUser, faEnvelope, faPaintBrush } from '@fortawesome/free-soli
 import { faLinkedin, faGithub, faSkype } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
-    <div className='nav-bar'>
+    <div className='nav-bar' style={{ height: "100vh"}}>
         <Link className='logo' to='/'>
             <img src={LogoB} alt="logo" />
             {/* <img src={LogoSubtitle} alt="slobodan" /> */}

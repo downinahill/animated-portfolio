@@ -28,7 +28,7 @@ const About = () => {
             </h1>
             
 
-            <p>I’ve been a fan of technology, computers, and coding since I was a kid and in the last few years I’ve been dabbling a lot in the latter, ultimately taking a boot camp at General Assembly in June of 2021 and learning more than I could have ever imagined. I graduated in December of 2021.
+            <p style={{padding: "20px"}}>I’ve been a fan of technology, computers, and coding since I was a kid and in the last few years I’ve been dabbling a lot in the latter, ultimately taking a boot camp at General Assembly in June of 2021 and learning more than I could have ever imagined. I graduated in December of 2021.
 
 In my most recent web development experience, I’ve been focusing more on the front end, utilizing React and APIs to make fun, useful, aesthetically pleasing applications. Since graduating General Assembly, I’ve made a travel advisor, a budget tracker, a social media UI, a Web 3.0 solidity smart contract app, a fitness app, and I'm constantly spending most of my spare time developing and learning new things.
 

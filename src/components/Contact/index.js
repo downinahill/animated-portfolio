@@ -53,16 +53,16 @@ const Contact = () => {
             <div className="contact-form">
                 <form ref={refForm} onSubmit={sendEmail}>
                     <li className="half">
-                        <input type="text" name="name" placeholder ="Name" required />
+                        <input type="text" name="user_name" placeholder ="Name" required />
                     </li>
                     <li className="half">
-                        <input type="email" name="email" placeholder ="Email" required />
+                        <input type="email" name="user_email" placeholder ="Email" required />
                     </li>
                     <li>
                         <input placeholder="Subject" type="text" name ="subject" required />
                     </li>
                     <li>
-                        <textarea placeholder="message" name ="message" required />
+                        <textarea placeholder="Message" name ="message" required />
                     </li>
                     <li>
                         <input type="submit" className ="flat-button" value="SEND" />
