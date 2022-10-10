@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Spootify",
+    subtitle: "Spotify Clone",
+    description: "A Spotify clone music player that utilizes React, Redux, and the Shazam API",
+    image: "Screen Shot 2022-10-10 at 3.13.42 PM.png",
+    link: "https://aesthetic-manatee-3a6929.netlify.app/",
+  },
+  {
     title: "Down in a Gym",
     subtitle: "Fitness App",
     description: "A fitness app built using React and fetching data from the ExercisesDB API.",
