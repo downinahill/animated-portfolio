@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "Yooby Doo",
+    subtitle: "YouTube Clone",
+    description: "A Youtube clone that utilizes React, and the YouTube v3 API",
+    image: "Screen Shot 2022-10-17 at 1.54.18 PM.png",
+    link: "https://helpful-zuccutto-4f4e50.netlify.app/",
+  },
+  {
     title: "Spootify",
     subtitle: "Spotify Clone",
     description: "A Spotify clone music player that utilizes React, Redux, and the Shazam API",

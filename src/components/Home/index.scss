@@ -6,6 +6,7 @@
       transform: translateY(-50%);
       width: 40%;
       max-height: 90%;
+      
     }
   
     h1 {
@@ -46,6 +47,7 @@
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
+        z-index: -1;
       }
     }
   
